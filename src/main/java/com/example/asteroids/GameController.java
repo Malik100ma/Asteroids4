@@ -3,6 +3,8 @@ package com.example.asteroids;
 import javafx.animation.Animation;
 import javafx.animation.AnimationTimer;
 import javafx.animation.FadeTransition;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.control.Label;
@@ -10,10 +12,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
-public class GameController {
+import java.io.IOException;
 
+public class GameController {
+    @FXML
+    private AnchorPane pane;
     @FXML
     private ImageView bg1, bg2, rocket, asteroid1, asteroid2, asteroid3, flame;
 
@@ -32,6 +38,10 @@ public class GameController {
 
     @FXML
     public void initialize() {
+        pane.setOnKeyPressed(this::handleKeyPressed);
+        pane.setOnKeyReleased(this::handleKeyReleased);
+        pane.setFocusTraversable(true);
+        Platform.runLater(() -> pane.requestFocus());
         asteroid_1_x = 900 + Math.random() * 300;
         asteroid_2_x = 900 + Math.random() * 300;
         asteroid_3_x = 900 + Math.random() * 300;
@@ -149,5 +159,10 @@ public class GameController {
         fire.setCycleCount(Animation.INDEFINITE);
         fire.setAutoReverse(true);
         fire.play();
+    }
+
+    public void goBack(ActionEvent actionEvent) throws IOException {
+        AsteroidApplication.setRoot("mainMenu-view");
+        System.out.println("Back Menu");
     }
 }

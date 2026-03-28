@@ -5,4 +5,5 @@ module com.example.asteroids {
 
     opens com.example.asteroids to javafx.fxml;
     exports com.example.asteroids;
+
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asteroids.SettingController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a7bc6" height="600.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
+      <Button layoutX="847.0" layoutY="564.0" mnemonicParsing="false" onAction="#backSetting" prefHeight="25.0" prefWidth="45.0" text="Back" />
+   </children>
+</AnchorPane>
