@@ -2,11 +2,24 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asteroids.SettingController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@styleSettings.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asteroids.SettingController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a7bc6" height="600.0" stroke="BLACK" strokeType="INSIDE" width="900.0" />
-      <Button layoutX="847.0" layoutY="564.0" mnemonicParsing="false" onAction="#backSetting" prefHeight="25.0" prefWidth="45.0" text="Back" />
+      <Button layoutX="791.0" layoutY="550.0" mnemonicParsing="false" onAction="#backSetting" prefHeight="39.0" prefWidth="101.0" text="Back" />
+      <Button layoutX="56.0" layoutY="80.0" mnemonicParsing="false" onAction="#easy" prefHeight="3.0" prefWidth="95.0" text="Easy">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="178.0" layoutY="82.0" mnemonicParsing="false" onAction="#medium" text="Medium">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="312.0" layoutY="84.0" mnemonicParsing="false" onAction="#hard" prefHeight="46.0" prefWidth="80.0" text="Hard">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

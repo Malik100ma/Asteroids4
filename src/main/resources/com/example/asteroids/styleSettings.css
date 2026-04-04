@@ -1,0 +1,15 @@
+.root {
+-fx-background-color: linear-gradient(to bottom,black,white);
+}
+.button{
+-fx-background-color: linear-gradient(to bottom,black,transparent);
+-fx-text-fill: white;
+-fx-font-size: 50xp;
+}
+.button:hover{
+ -fx-background-color: linear-gradient(to bottom,yellow,transparent);
+ -fx-text-fill: black;
+ -fx-weight-bold;
+ -fx-font-size: 50xp;
+ -fx-cursor: hand;
+ }

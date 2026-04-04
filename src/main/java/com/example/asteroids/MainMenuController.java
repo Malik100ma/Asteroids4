@@ -12,6 +12,6 @@ AsteroidApplication.setRoot("game-view");
 
     public void settings(ActionEvent actionEvent) throws IOException {
         AsteroidApplication.setRoot("settingMenu-view");
-        System.out.println("New Game Started");
+        System.out.println("Setting Open");
     }
 }

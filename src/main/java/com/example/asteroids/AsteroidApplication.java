@@ -32,6 +32,6 @@ public class AsteroidApplication extends Application {
     public static void main(String[] args) {
         System.out.println("Game Started!");
         launch();
-        System.out.println("Game Stoped!");
+        System.out.println("Asteroids Stoped!");
     }
 }
