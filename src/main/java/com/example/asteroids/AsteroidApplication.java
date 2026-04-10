@@ -9,14 +9,14 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 import static com.example.asteroids.AppConfig.HEIGHT;
-import static com.example.asteroids.AppConfig.WEIGTH;
+import static com.example.asteroids.AppConfig.WIDTH;
 
 public class AsteroidApplication extends Application {
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("mainMenu-view"), WEIGTH, HEIGHT);
+        scene = new Scene(loadFXML("mainMenu-view"), WIDTH, HEIGHT);
         stage.setTitle("Asteroids");
         stage.setResizable(false);
         stage.setScene(scene);
